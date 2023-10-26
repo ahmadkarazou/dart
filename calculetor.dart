@@ -8,23 +8,16 @@ String? inpot2=stdin.readLineSync();
   int number2=int.parse(inpot2!);
   stdout.writeln("Enter a operator(+,-,*,/)");
   String? operator=stdin.readLineSync();
-  switch (operator) {
-    case '+':
-      print(number1+number2);
-      break;
-    case '-':
-      print(number1-number2);
-      break;  
-    case '*':
-      print(number1*number2);
-      break;
-    case '/':
-      print(number1/number2);
-      break;
-    default:
-    print("The correct currency was not entered");
-      break;
+  if (operator=='+') {
+    print(number1+number2);
+  } else if(operator=='-') {
+     print(number1-number2);
+  }else if(operator=='*') {
+     print(number1*number2);
+  }else if(operator=='/') {
+     print(number1/number2);
+  }else{
+     print("The correct currency was not entered");
   }
 
-  
 }
